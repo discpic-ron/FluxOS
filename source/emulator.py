@@ -16,7 +16,7 @@ class Emulator:
       "HALT":halt
     }
     
-  def step():
+  def step(self):
     instruction_line = self.ram[self.finger]
     parts = instruction_line.split()
     cmd_name = parts[0]
