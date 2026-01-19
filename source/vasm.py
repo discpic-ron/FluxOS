@@ -9,7 +9,14 @@ def store(vm,index):
   idx = int(index)
   vm.ram[idx] = vm.registers["A"]
   vm.arrow += 1
-
+  
+def load(vm,index):
+  idx = int(index)
+  value = vm.ram[idx]
+  vm.registers["A"] = value
+  print(f"[Action] Loaded '{value}' from locker {idx} into Register A")
+  vm.arrow += 1
+  
 def halt(vm):
   vm.running = False
 
