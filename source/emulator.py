@@ -25,4 +25,4 @@ class Emulator:
       args = parts[1:]
       self.commands[cmd_name](self, *args)
     else:
-        self.finger += 1 # Skip empty lockers
+        self.arrow += 1 # Skip empty lockers
