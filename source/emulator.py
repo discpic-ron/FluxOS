@@ -19,7 +19,7 @@ class Emulator:
     }
     
   def step(self):
-    instruction_line = self.ram[self.finger]
+    instruction_line = self.ram[self.arrow]
     parts = instruction_line.split()
     cmd_name = parts[0]
         
