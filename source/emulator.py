@@ -1,8 +1,8 @@
 import time
 
 class Emulator:
-  def __init__(self):
-    self.ram = [0] * 50
+  def __init__(self,lockers):
+    self.ram = [0] * lockers
     self.disk = []
     self.registers = {"A": 0}
     self.arrow = 0
