@@ -17,6 +17,10 @@ def load(vm,index):
   print(f"[Action] Loaded '{value}' from locker {idx} into Register A")
   vm.arrow += 1
   
+def v_input(vm,user_input):
+  vm.registers["A"] = user_input
+  vm.arrow += 1
+  
 def halt(vm):
   vm.running = False
 
