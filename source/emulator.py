@@ -7,9 +7,21 @@ class Emulator:
     self.registers = {"A": 0}
     self.arrow = 0
     self.running = True
+    self.instructions = {
+      "SET":set_rg,
+      "STORE":store,
+      "PRINT":out,
+      "JUMP":jump,
+      "HALT":halt
+    }
     
-  def boot(self):
-    while self.running:
-      ir = ram[self.arrow] # 'ir' stands for Instruction Register
-      time.sleep(0.6)
-      #if ir ==
+  def step():
+    instruction_line = self.ram[self.finger]
+    parts = instruction_line.split()
+    cmd_name = parts[0]
+        
+    if cmd_name in self.commands:
+      args = parts[1:]
+      self.commands[cmd_name](self, *args)
+    else:
+        self.finger += 1 # Skip empty lockers
