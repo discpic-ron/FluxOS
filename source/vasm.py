@@ -1,5 +1,3 @@
-from emulator import Emulator
-
 # instructions
 def set_reg(vm,value):
   vm.registers["A"] = value
