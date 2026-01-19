@@ -17,5 +17,5 @@ def jump(vm,index):
   vm.arrow = int(index)
 
 def out(vm):
-  print(f"[DISPLAY]: {vm.registers['A']}"})
+  print(f"[DISPLAY]: {vm.registers['A']}")
   vm.arrow += 1
