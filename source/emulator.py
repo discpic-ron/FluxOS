@@ -1,5 +1,5 @@
 import time
-from vasm import set_reg, store, load, halt, jump, out
+from vasm import set_reg, store, load, halt, jump, out, v_input
 
 class Emulator:
   def __init__(self,lockers):
@@ -12,6 +12,7 @@ class Emulator:
       "SET":set_reg,
       "STORE":store,
       "LOAD":load,
+      "INPUT": v_input,
       "PRINT":out,
       "JUMP":jump,
       "HALT":halt
