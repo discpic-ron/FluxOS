@@ -1,7 +1,7 @@
 from emulator import Emulator
 
 # instructions
-def set_rg(vm,value):
+def set_reg(vm,value):
   vm.registers["A"] = value
   vm.arrow += 1
   
