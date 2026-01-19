@@ -1,3 +1,9 @@
 from emulator import Emulator
 
-# none here
+def load_OS(vm, instruction_list, start_at=0):
+  for i, instruction in enumerate(instruction_list):
+    vm.ram[i + start_at] = instruction
+  print(f"KERNEL: Loaded {len(instruction_list)} instructions starting at Locker {start_at}")
+
+instruction_list = []
+load_OS(vm, instruction_list)
