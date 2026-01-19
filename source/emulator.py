@@ -9,7 +9,7 @@ class Emulator:
     self.arrow = 0
     self.running = True
     self.instructions = {
-      "SET":set_rg,
+      "SET":set_reg,
       "STORE":store,
       "PRINT":out,
       "JUMP":jump,
