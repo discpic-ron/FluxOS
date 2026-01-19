@@ -9,3 +9,9 @@ def store():
   
 def halt():
   pass
+
+def jump():
+  pass
+
+def print(data):
+  return data
